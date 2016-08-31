@@ -1,0 +1,9 @@
+<h1>Categorias</h1>
+
+<ul>
+    <?php foreach ($this->categorias as $categoria) { ?>
+      <li>
+        <a href="<?php echo $this->url(array('action' => 'index', 'idcategoria' => $categoria['idcategoria'])); ?>"><?php echo $categoria['categoria']; ?></a>
+      </li>
+  <?php } ?>
+</ul>

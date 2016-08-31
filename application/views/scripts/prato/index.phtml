@@ -1,0 +1,33 @@
+<h1>Pratos</h1>
+
+<?php $this->mensagem(); ?>
+
+
+<table border="1">
+  <thead>
+    <tr>
+      <td>#</td>
+      <td>Nome do Prato</td>
+      <td>Categoria</td>
+      <td>Preco</td>
+      <td></td>
+    </tr>
+  </thead>
+  <tbody>
+      <?php foreach ($this->pratos as $prato) { ?>
+        <tr>
+          <td><?php echo $prato['idpratos']; ?></td>
+          <td><?php echo $prato['nomeprato']; ?></td>
+          <td><?php echo $prato['categoria']; ?></td>
+          <td><?php echo $prato['precoprato']; ?></td>
+          <td>
+            <a href="<?php echo $this->url(array('action' => 'update', 'idpratos' => $prato['idpratos'])); ?>">editar</a>
+            <?php  if($this->podeApagar){ ?><a href="<?php echo $this->url(array('action' => 'delete', 'idpratos' => $prato['idpratos'])); ?>">apagar</a><?php } ?>
+          </td>
+        </tr>
+      <?php } ?>
+  </tbody>
+</table>
+
+
+<p><a href="<?php echo $this->url(array('action' => 'create')); ?>">Cadastrar novo prato</a></p>

@@ -1,0 +1,33 @@
+<h1>Usuários</h1>
+
+<?php $this->mensagem(); ?>
+
+
+<table border="1">
+  <thead>
+    <tr>
+      <td>#</td>
+      <td>Papel</td>
+      <td>Nome</td>
+      <td>Email</td>
+      <td>Senha</td>
+      <td></td>
+    </tr>
+  </thead>
+  <tbody>
+      <?php foreach ($this->admins as $admin) { ?>
+        <tr>
+          <td><?php echo $admin['idadmin']; ?></td>
+          <td><?php if ($admin['papel'] == '2') { ?>Admin<?php } else { ?>Redator<?php } ?></td>
+          <td><?php echo $admin['nome']; ?></td>
+          <td><?php echo $admin['email']; ?></td>
+          <td><?php echo $admin['senha']; ?></td>
+          <td>
+            <a href="<?php echo $this->url(array('action' => 'update', 'idadmin' => $admin['idadmin'])); ?>">editar</a>
+            <a href="<?php echo $this->url(array('action' => 'delete', 'idadmin' => $admin['idadmin'])); ?>">apagar</a>
+          </td>
+        </tr>
+    <?php } ?>
+  </tbody>
+</table>
+<p><a href="<?php echo $this->url(array('action' => 'create')); ?>">Cadastrar novo usuário</a></p>

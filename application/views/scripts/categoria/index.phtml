@@ -1,0 +1,27 @@
+<h1>Categorias</h1>
+
+<?php $this->mensagem(); ?>
+
+<table border="1">
+  <thead>
+    <tr>
+      <td>#</td>
+      <td>Categoria</td>
+      <td></td>
+    </tr>
+  </thead>
+  <tbody>
+      <?php foreach ($this->categorias as $categoria) { ?>
+        <tr>
+          <td><?php echo $categoria['idcategoria']; ?></td>
+          <td><?php echo $categoria['categoria']; ?></td>
+          <td>
+            <a href="<?php echo $this->url(array('action' => 'update', 'idcategoria' => $categoria['idcategoria'])); ?>">editar</a>
+            <a href="<?php echo $this->url(array('action' => 'delete', 'idcategoria' => $categoria['idcategoria'])); ?>">apagar</a>
+          </td>
+        </tr>
+    <?php } ?>
+  </tbody>
+</table>
+
+<p><a href="<?php echo $this->url(array('action' => 'create')); ?>">Cadastrar nova categoria</a></p>

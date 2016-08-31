@@ -1,0 +1,42 @@
+html body{background-color: #F1F1F1; text-align:center}
+/*#content{text-align: center;}*/
+#breadcrumb{padding: 2px 10px; display: inline-block; width:100%; text-decoration: none; font-size: 15px; text-align: left; font-weight:700; font-style: arial; color: #118397;}
+#breadcrumb a{ color: #118397; font-size: 15px; font-weight:700;}	
+/*#breadcrumb a:hover{ opacity:0.8}*/
+#menu{padding:0; margin:0;}
+#menu .navigation{ height:60px; border-radius:3px;}
+#menu ul{padding:0px; margin:0px; background-color:#118397; list-style:none; opacity:  1; position: relative;}
+#menu li{display: inline-table; opacity: 0.7; /*border-radius:5px;*/}
+#menu ul li a {padding: 2px 10px; display: inline-block; /* visual do link */ background-color:#EDEDED; color: #118397; text-decoration: none; border-bottom:3px solid #EDEDED; font-size: 20px; text-align: center;}
+#menu ul li:last-child{background-color:#f1f1f1; opacity:1}
+#menu ul li:last-child a {/*font-style: verdana; font-size: 15px; border-right: 2px;*/}
+#menu ul li ul{display:none;}
+#menu ul li:hover ul{display:block}
+#menu ul li ul li{ width:100%;}
+#menu ul li ul li a{ width:70%}
+/*#menu ul li:last-child a:hover {background-color:#D6D6D6; color: #6D6D6D; border-bottom:3px solid green;}*/
+#menu ul li a:hover {background-color:#D6D6D6; color: #6D6D6D;border-bottom:3px solid blue;}
+.errors{color: red;}
+#senha-label, #email-label{color: #118397;}
+h1 {font-size: 22px !important; font-weight:700!important; font-style: arial!important; color: #118397!important;}
+#content table{ display:inline-block}
+#content p a{ font-size: 16px; font-weight:700; font-style: arial; color: #118397; text-decoration:none;}
+#content p a:hover{ color:#24AAB8;}
+#content table{ border:2px solid #118397; color:#0E6A7A; text-transform:uppercase}
+#content table td{border:1px solid #118397}
+#content table td tr{border:1px solid #118397}
+#content table td a{ background-color:#0E6A7A; color:#fff; text-decoration:none; font-style: arial; font-size:12px; padding:3px 10px 3px 10px; border-radius:3px; }
+#content table td a:hover{ opacity:0.8}
+#content ul li a{font-size: 16px; font-weight:700; font-style: arial; color: #118397; text-decoration:none; text-transform:uppercase;}
+#content ul li a:hover{ opacity:0.8}
+#content ul li{list-style:none}
+#content ul{ margin:0; padding:0;}
+#content form dd{ padding:0; margin:0;}
+#content form dd input{height:25px; border:1px solid #118397; width:300px; margin-bottom:10px; color:#118397; padding-left:5px;}
+#content form dd #submit{ border:1px solid #118397; cursor:pointer; background-color:#118397; color:#fff; border-radius:3px; height:35px;}
+#content form dd #submit:hover{ opacity:0.8}
+#content form dd #botao{ border:1px solid #118397; cursor:pointer; background-color:#118397; color:#fff; border-radius:3px; height:35px;}
+#content form dd #botao:hover{ opacity:0.8}
+#content form dl dt label{color: #118397;}
+#content form dd select{height:25px; border:1px solid #118397; width:305px; margin-bottom:10px; color:#118397; text-transform:uppercase}
+.msg li{font-size: 14px; font-weight:700; font-style: arial; color: blue; text-decoration:none;}

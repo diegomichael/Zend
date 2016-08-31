@@ -1,0 +1,24 @@
+<h1>Cardápio</h1>
+
+<table border="1">
+
+  <thead>
+    <tr>
+      <td>Nome do Prato</td>
+      <td>Categoria</td>
+      <td>Preços</td>
+    </tr>
+  </thead>
+  <tbody>
+      <?php foreach ($this->pratos as $pratos) { 
+        
+          if($pratos['precoprato'] > 0){
+        ?>
+        <tr>
+          <td><?php echo $pratos['nomeprato']; ?></td>
+          <td><?php echo $pratos['categoria']; ?></td>
+          <td><?php echo $pratos['precoprato']; ?></td>
+        </tr>
+      <?php } }?>
+  </tbody>
+</table>
